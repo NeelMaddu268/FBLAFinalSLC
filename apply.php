@@ -192,16 +192,16 @@ use Ramsey\Uuid\Uuid;
 $uuid = Uuid::uuid4();
 
 $uuidString = $uuid->toString();
-
+//basic information
 $region = 'us-east-1';
 $version = 'latest';
 $bucket = 'resumes-application-upload';
 $tableName = 'Applications';
-
+//if it has been submitted run code
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(!empty($_FILES["upload"]["name"])) {
-
+    //insert to s3
         $file_name = basename($_FILES["upload"]["name"]);
         $file_type = pathinfo($file_name, PATHINFO_EXTENSION);
         $file_name = substr($file_name, 0, -4)."-".date("Y_m_d")."-".$_POST["email"].$file_type;
@@ -218,7 +218,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 ]);
 
                 try {
-
+                      //insert to dynamoDB
                     $result = $s3->putObject([
                         'Bucket' => $bucket,
                         'Key'    => $file_name,
@@ -233,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             'region'  => 'us-east-1',
                             'version' => 'latest'
                         ]);
-
+                      //item to be uploaded into dynamoDB
                       $item = [
                           'fname' => ['S' => $_POST['fname']],
                           'lname' => ['S' => $_POST['lname']],
@@ -256,10 +256,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           $functionName = 'sendEmail';
                           
                           try{
+                            //run lambda code to send email
                           $payload = json_encode(['subject' => 'HiroTeaBar Application', 'name' => $_POST['fname'], 'rec'=>$_POST["email"]]); // Example payload
 
                           // Create an AWS Lambda client
-                          $lambda = new LambdaClient([    'region' => 'us-east-1', // Change this to your desired region
+                          $lambda = new LambdaClient([    'region' => 'us-east-1', 
                                                      'version' => 'latest',]);
 
                           // Invoke the Lambda function
@@ -267,7 +268,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                               'FunctionName' => $functionName,
                               'Payload'      => $payload,
                           ]);
-                          $responseData = $result->toArray(); // or $result['data']
+
                           }catch (Aws\Exception\AwsException $e){
                           error_log('LambdaException ' . $e->getMessage());
                           }
