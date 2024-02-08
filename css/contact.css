@@ -1,0 +1,96 @@
+/* Declare the global variables */
+
+:root{
+  --cup-size:100px;
+  --juice-Size:calc(calc(var(--cup-size)*0.87) + 3px);
+  --zoom:scale(0.04);
+  --scale-factor: calc(100vw / 4000);
+  --mobile-zoom: scale(--scale-factor);
+
+  --blue:#58c8db; 
+  --brown:#e6aa68;
+  --jade:#fffbbd;
+  --darkBlue:#4F7CAC;
+
+  --black:#37323e;
+  --subfont:#46351D;
+  --font:#000000;
+  --scrollY:0;
+
+}
+
+/* Giving the background the color of blue assigned in the global variable */
+
+body{
+  background:var(--blue);
+}
+
+/* Positioning the scrollbar upward and leftward */
+
+.content{
+  margin-left:-400px;
+  margin-top:-300px;
+}
+
+/* Repositioning the scrollbar to fit the mobile screen */
+
+@media (max-width: 1000px){
+  .content{
+    margin-left:-300px;
+    margin-top:0px;
+  }
+}
+.contactContent{
+  color:var(--blue);
+}
+
+/*height of scrolling*/
+.borgum{
+   width: 200vw; 
+  height: calc(40% + 250vw);
+  position:relative;
+  z-index:-1;
+}
+
+/*contains the svgs*/
+.contactContainer{
+  width: 200vw; 
+  margin-top:40%;
+  display: flex;
+  will-change:transform;
+  position:fixed;
+  transform:rotate(30deg) translateX(50vw);
+
+  }
+
+.contactContainer svg, .contactContainer img{
+  background-size: cover;
+  background-position: center;
+
+}
+@media (max-width:1000px){
+  .contactContainer svg, .contactContainer img{
+    height:900px;
+    width:auto;
+  }
+  .contactContainer{
+    width:90rem;
+    margin-top:auto;
+    margin-left:30%;
+
+  }
+  .borgum{
+    height:calc(90% + 90rem);
+  }
+}
+.contactContainer .mail{
+  margin-bottom:10rem;
+}
+
+.contactContent{
+  background:var(--blue);
+}
+
+#facebook:hover .fbBack{
+  fill:#b98aff;
+}

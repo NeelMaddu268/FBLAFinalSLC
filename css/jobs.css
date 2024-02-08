@@ -1,0 +1,370 @@
+/* Declare the global variables */
+
+:root{
+  --cup-size:100px;
+  --juice-Size:calc(calc(var(--cup-size)*0.87) + 3px);
+  --zoom:scale(0.04);
+  --blue:#9BE4FE; 
+  --babyBlue: #74CEF4;
+  --brown:#e6aa68;
+  --jade:#fffbbd;
+  --darkBlue:#545E75;
+  --black:#37323e;
+  --font:#46351D;
+  --pink:#FFA69E;
+  --scrollY:0;
+}
+
+/* Styles to apply for all pages: Width, Font Family, Colors */
+
+*{
+  margin:0;
+}
+html, body { 
+    background-color: var(--blue);
+    max-width: 100%;
+    font-family: 'Lato';  
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+} 
+
+/* Set container to flex and justify content to center so items in the container are neatly spaced out and in a column format */
+
+.flex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div{
+  height: 60%;
+  margin: 20px;
+  padding: 10px;  
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set headertext to center and add padding */
+
+.headerText {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Rings in the background of the page */
+
+#designCircle1 {
+  position: absolute;
+  width: 20vw;
+  z-index: 1;
+  top:0;
+  left:0;
+  pointer-events: none;
+}
+
+#designCircle2 {
+  position: absolute;
+  width: 20vw;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+/*Creates the border cards for the job button SVGs */
+
+.border {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 25px;
+  border-width: 10px;
+  width: 25%;
+  background:var(--jade);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/*Creates the border cards for the job SVGs on the specific job pages*/
+.borderImage{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-width: 3px;
+  height: 85%;
+  width: 25%;
+  background:var(--jade);
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 20px;
+  z-index: 2;
+}
+
+/*Creates the border cards for the job descriptions on the specific job pages*/
+.borderText{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-width: 3px;
+  height: 85%;
+  width: 50%;
+  background:var(--jade);
+  align-items: center;
+  margin: 5px;
+  padding: 20px;
+  font-size:0.9rem;
+  z-index: 2;
+
+}
+
+/*Sets the animation speed for the images at the top of the job page*/
+.imagePop{
+  position: relative;
+  transition: transform .3s;
+}
+
+/*Makes images's heights on each job page 65% of the screen size*/
+.image{
+  display:block;
+  height:65%;
+  margin: 0 auto;
+  opacity: 1;
+  backface-visibility: hidden;
+  max-width: 100%;
+}
+
+/*Sets the animation speed for the appearing box that says "More information" */
+.middleRegister {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  transition: .3s ease;
+  text-align: center;
+
+}
+
+
+.imagePop:hover .image{
+  filter: brightness(75%) drop-shadow(0px 0 5px black);
+}
+
+.imagePop:hover .bobaCup{
+  filter: brightness(75%) drop-shadow(0px 0 5px black);
+
+}
+
+.imagePop:hover .managerImg{
+  filter: brightness(75%) drop-shadow(0px 0 5px black);
+}
+
+.imagePop:hover{
+  transform: scale(1.1);
+}
+
+.imagePop:hover .middleRegister{
+  opacity: 1;
+}
+
+.imagePop:hover .middleBoba{
+  opacity: 1;
+}
+
+.imagePop:hover .middleManager{
+  opacity: 1;
+}
+
+.textBox {
+  background: steelblue;
+  color: white;
+  font-size: 20px;;
+  padding: 25px 5px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 9vw;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(56,	104,	144);
+  justify-content:center;
+}
+
+
+.textBoxApply {
+  background: var(--blue);
+  text-decoration:none;
+  color: black;
+  font-weight:bold;
+  font-size:2vw;
+  padding: 0.75vw 2vw;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.div-img{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  width: 100%;
+  height:calc(100vh - 96px);
+  scroll-snap-align: start;
+  position:relative;
+
+}
+
+.pageContainer {
+  width: 100%;
+  height: calc(100vh - 96px);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
+  scroll-behavior: smooth;
+
+}
+
+.page{
+  background-color: var(--brown);
+  width: 100%;
+  height: calc(100vh - 96px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-margin-top: 96;
+  z-index: 2;
+
+}
+
+.barista {
+  background-color: var(--brown);
+  width: 100%;
+  height: calc(100vh - 96px);
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+
+}
+
+.manager {
+  background-color: var(--brown);
+  width: 100%;
+  height: calc(100vh - 96px);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+
+}
+
+.jobTitle {
+  text-align: center;
+}
+
+h2 {
+  padding: 5px;
+}
+
+li {
+  padding: 5px;
+}
+
+.applyButton {
+  display: flex;
+  justify-content: center;
+  transition: .3s;
+  text-decoration: none;
+
+}
+
+.applyButton:hover {
+  transform: scale(1.1);
+}
+
+.mobile {
+  display: none;
+}
+
+
+@media (max-width: 980px) {
+  .headerText {
+    font-size: 10vw;
+    padding: 2vw;
+  }
+
+  .flex-container > div {
+    height: 25%;
+    display: flex;
+    margin: 10px; 
+    padding: 0;   
+
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .div-img {
+    height: calc(100vh - 64px);
+  }
+
+  .pageContainer {
+    height: calc(100vh - 64px);
+  }
+
+  .page {
+    height: calc(100vh - 64px);
+  }
+
+
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .borderImage {
+    display: none;
+    height: 40%;
+  }
+
+  .borderText {
+    font-size: 0.65rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .middleRegister {
+    display: none;
+  }
+
+  .middleBoba {
+    display: none;
+  }
+
+  .middleManager {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+  .textBoxApply {
+    height: 3vw;
+    font-size: 3vw;;
+    padding: 10px 20px;
+  }
+}
+
+
+

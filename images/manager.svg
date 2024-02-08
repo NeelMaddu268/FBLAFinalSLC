@@ -1,0 +1,57 @@
+<svg width="256" height="252" viewBox="0 0 256 252" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_0_1)">
+<path d="M134.937 236.927C132.517 242.594 124.483 242.594 122.063 236.927L109.174 206.749C108.424 204.993 108.424 203.007 109.174 201.251L122.063 171.073C124.483 165.406 132.517 165.406 134.937 171.073L147.826 201.251C148.576 203.007 148.576 204.993 147.826 206.749L134.937 236.927Z" fill="#D61F1F"/>
+</g>
+<g filter="url(#filter1_d_0_1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M123.289 232.764C124.867 237.196 131.133 237.196 132.711 232.764L163.946 145H183C218.899 145 248 174.101 248 210V240C248 243.314 245.314 246 242 246H14C10.6863 246 8 243.314 8 240V210C8 174.101 37.1015 145 73 145H92.054L123.289 232.764Z" fill="black"/>
+</g>
+<g filter="url(#filter2_d_0_1)">
+<ellipse cx="128" cy="70" rx="48" ry="60" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128 10C101.49 10 80 31.4903 80 58V70.4511H176V58C176 31.4903 154.51 10 128 10Z" fill="black"/>
+</g>
+<g filter="url(#filter3_d_0_1)">
+<path d="M116.394 151.112C115.68 147.982 118.059 145 121.269 145H128H134.731C137.941 145 140.32 147.982 139.606 151.112L137.553 160.112C137.035 162.386 135.012 164 132.679 164H123.321C120.988 164 118.965 162.386 118.447 160.112L116.394 151.112Z" fill="#D61F1F"/>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="104.612" y="166.823" width="47.7766" height="82.355" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<filter id="filter1_d_0_1" x="4" y="145" width="248" height="109" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<filter id="filter2_d_0_1" x="76" y="10" width="104" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<filter id="filter3_d_0_1" x="112.267" y="145" width="31.4668" height="27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>

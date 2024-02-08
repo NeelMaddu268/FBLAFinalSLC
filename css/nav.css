@@ -1,0 +1,178 @@
+/* Declare the global variables */
+
+:root{
+  --blue:#ACECF7; 
+  --brown:#e6aa68;
+  --jade:#fffbbd;
+  --darkBlue:#4F7CAC;
+  --black:#37323e;
+  --font:#46351D;
+}
+
+/* Declare the global variables */
+
+.content{
+  transition:0.3s all;
+  position:relative;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+#logo{
+  height:80px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#doba{
+  height:200px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav{
+  display:flex;
+  position:sticky;
+  top:0;
+  background-color:#FFFFFF;
+  z-index:10;
+  align-items:center;
+  font-family: 'Lato';font-size: 22px;
+  box-shadow:0px 0px 2px #d1d1d1;
+  transition:padding 0.5s;
+  padding:0.5rem;
+}
+
+.navLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display:flex;
+  width:100%;
+  
+}
+
+.navLinks .active {
+  background-color: var(--blue);
+  float:right;
+  border-radius:1rem;
+  margin-left:auto;
+  height:100%;
+  padding:0.75rem 1rem;
+}
+.navLinks .active a{
+    color:var(--font);
+
+}
+.navLinks li{
+  display:flex;
+  margin-left:5rem;
+  align-items:center;
+}
+
+li a {
+  display: block;
+  color:var(--font);
+
+  font-weight:bold;
+  text-align: center;
+  text-decoration: none;
+  font-size:2rem;
+  display:flex;
+  align-items:center;
+}
+.activeLink a{
+  color: var(--blue);
+}
+.activeLink a .body{
+  fill: var(--blue);
+}
+li:hover .home .inactive{
+  fill: var(--blue);
+}
+.activeLink a .body{
+  fill: var(--blue);
+}
+.activeLink a .stroke{
+ fill:var(--darkBlue);
+}
+li a svg{
+  align-items:center;
+  height:50;
+}
+
+li a .stroke{
+  fill:var(--font);
+}
+/*Hover effects*/
+li:hover a .body{
+  fill:#00e1ff;
+}
+li:hover a .stroke {
+  fill:#005275;
+}
+li:hover a div{
+  color:#00608a;
+}
+
+.menu{
+  display:none;
+  position:absolute;
+  right:0;
+  height:100px;
+  width:100px;
+}
+
+/*Mobile navbar*/
+@media (max-width:1000px){
+  nav{ background-color:#fafafa;}
+  .blurred{
+  }
+  .navLinks{
+    display:inline-block;
+    position:absolute;
+    height:100vh;
+    top:calc(3rem + 16px);
+    right:0;
+    background:white;
+    width:0;
+    transition:0.3s ease-in-out;
+  }
+
+  .navLinks .active{
+    float:none;
+    height:auto;
+    margin-left:2rem;
+    padding:1rem 0;
+    justify-content:center;
+    width:10rem;
+
+  }
+  li a svg{
+    height:3rem;
+    width:3rem;
+  }
+  .navLinks li{
+    margin: 2.5rem 0 2.5rem 2rem;
+  }
+  .navLinks li a{
+    margin-left: 16px;
+  }
+  .navLinks .active a{
+    margin-left: 0px;
+  }
+  li a{
+    font-size:1.5rem;
+  }
+  .menu{
+    display:inline-block;
+    height:2.5rem;
+  }
+  .hidden{
+    display:none;
+  }
+  #logo{
+    height:3rem;
+  }
+  
+}

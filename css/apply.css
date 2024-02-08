@@ -1,0 +1,542 @@
+/* Declare the global variables */
+:root {
+  --cup-size: 100px;
+  --juice-Size: calc(calc(var(--cup-size)*0.87) + 3px);
+  --zoom: scale(0.04);
+  --blue: #9BE4FE;
+  --brown: #e6aa68;
+  --jade: #fffbbd;
+  --darkBlue: #545E75;
+  --black: #37323e;
+  --font: #46351D;
+  --scrollY: 0;
+}
+
+/* Styles to apply for all pages: Width, Font Family, Colors */
+* {
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  font-family: 'Lato';
+  text-align: center;
+}
+
+body {
+  font-family: 'Lato';
+  background-color: #9BE4FE;
+  overflow-x: hidden;
+
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animating the form page change: 1500ms, positions for right, middle, and left*/
+.box {
+  transition-duration: 1500ms;
+  margin:auto;
+}
+
+
+.middle3 {
+  transform: translate(-82%);
+}
+
+.leftGone {
+  transform: translate(-150%);
+}
+
+.rightGone {
+  transform: translate(150%);
+}
+
+/* Make logo smaller and fade in*/
+#logo {
+  height: 80px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+/* Styling parts of the container */
+p {
+  color: black;
+  font-size: 25px;
+}
+
+/* Styling the label */
+.flavor-label {
+  padding-bottom: 20px;
+}
+
+/* Styling the heading text */
+
+.heading {
+  color: black;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/* Centering and positioning the mainForm */
+
+.mainForm {
+  text-align: center;
+  position: relative;
+  margin:auto;
+  display: inline-flex;
+}
+
+/* Making the fieldsets in the mainForm neater. Adding padding, border, and position */
+
+.mainForm fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.4rem;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+/* Align the form cards to the left */
+
+.form-card {
+  text-align: left;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Setting the job and gender dropdown to extend to 95% of fieldset width */
+
+#job,
+#gender {
+  width: 95%;
+}
+
+/* Styling the text of the file button. Formatting the content in the file selector button with different text, an absolute position and changing the hover color*/
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+input[type="file"]::after {
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  content: "Upload File";
+  pointer-events: none;
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  margin-right: 16px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Styling the next form button with margin, sizing, colors, and border-radius */
+
+.mainForm .navigation-button-next {
+  background: #9BE4FE;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 9px 0px 10px 6px;
+  float: right;
+  border-radius: 13px;
+  width: 130px;
+  height: 59px;
+  font-size: 23px;
+  margin-right: 25px;
+}
+
+/* Adding hover styles to the the next form button */
+
+.mainForm .navigation-button-next:hover,
+.mainForm .navigation-button-next:focus {
+  background-color: #65cbf0
+}
+
+/* Styling the previous form button with slightly different colors than the next button and keeping mostly similar styles */
+
+.mainForm .navigation-button-previous {
+  background: #9bfef4;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+  width: 130px;
+  height: 59px;
+  font-size: 23px;
+  border-radius: 13px;
+}
+
+/* Adding hover styles to the the previous form button */
+
+.mainForm .navigation-button-previous:hover,
+.mainForm .navigation-button-previous:focus {
+  background-color: #80ede2;
+}
+
+/* Making the input and textarea boxes neater in the form: adding padding, changing text size, letter spacing, and box height */
+
+.mainForm input,
+.mainForm textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 34px;
+  margin-top: 2px;
+  width: 95%;
+  color: black;
+  background-color: #ECEFF1;
+  font-size: 19px;
+  letter-spacing: 1px
+}
+
+::placeholder {
+  color: black;
+}
+
+.mainForm input {
+  height: 58px;
+}
+
+.mainForm textarea {
+  height: 110px;
+}
+
+/* Creating a border around the box when focused on */
+
+.mainForm input:focus,
+.mainForm textarea:focus {
+  border: 1px solid black;
+  outline-width: 0
+}
+
+/* Formatting the cards and fieldLabels inside the form */
+
+
+.fieldlabels {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  width:95%;
+}
+
+
+/* Create the boba container with height and width */
+
+.boba-container {
+  width: 300px;
+  height: 450px;
+  margin-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Create the boba cup with the background color and border*/
+
+.boba-cup {
+  width: 100%;
+  height: 100%;
+  background-color: #ffeecc;
+  border: 2px solid #ff7f50;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Make the labels in the form bloded and have a margin */
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Make brown circles with a height and width and assign an animation of fallingAnimation for 3s downwards */
+
+.boba-pearls {
+  position: absolute;
+  bottom: -50px;
+  width: 21px;
+  height: 21px;
+  background-color: #6b3e08;
+  border-radius: 50%;
+  animation: fallingAnimation 3s forwards;
+}
+
+/* Make stars with a height and width and assign an animation of fallingAnimation for 3s downwards */
+
+.star {
+  width: 30px;
+  height: 30px;
+  bottom: -50px;
+  position: absolute;
+  border-radius: 5px;
+  animation: fallingAnimation 3s forwards;
+}
+
+/* Make white sugar cubes with a height and width and assign an animation of fallingAnimation for 3s downwards */
+
+.sugar-cube {
+  width: 20px;
+  height: 20px;
+  bottom: -50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  animation: fallingAnimation 3s forwards;
+}
+
+/* The falling animation moves the items down by 240px and rotates them 360 degrees over the time */
+
+@keyframes fallingAnimation {
+  0% {
+    transform: translateY(-300px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-60px) rotate(360deg);
+  }
+}
+
+.uploadStyles{
+  width:95%;
+}
+
+#upload{
+  width:100%;
+}
+/* Design the dropdowns with the arrows */
+
+.selectArea {
+  min-width: 700px;
+  position: relative;
+  width: 95%;
+  justify-content:center;
+  display:flex;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 19px;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #ECEFF1;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.selectArea::before,
+.selectArea::after {
+  --size: 0.3rem;
+  content: "";
+  position: absolute;
+  right: 3rem;
+  pointer-events: none;
+}
+
+.selectArea::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 23%;
+}
+
+.selectArea::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 35%;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.mainForm fieldset {
+  border-radius: 1.4rem;
+}
+
+/* Styling the page for the mobile version. Changing sizes of all elements. Each element is made smaller, and is positioned to fit the center of the page to adjust the viewing on mobile screens. The font size is bigger to help with visibility on the smaller screens. Change the animation */
+
+@media(max-width:1000px) {
+  /* Adjusting the falling pixels to fit on mobile page */
+
+  @keyframes fallingAnimation {
+    0% {
+      transform: translateY(-700px) rotate(0deg);
+    }
+
+    100% {
+      transform: translateY(-70px) rotate(360deg);
+    }
+  }
+
+  .star {
+    width: 90px;
+    height: 90px;
+  }
+
+  .boba-pearls {
+    width: 63px;
+    height: 63px;
+  }
+
+  .sugar-cube {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+  }
+
+  .form-card {
+    width: 80vw;
+  }
+
+  form {
+    padding-top: 2vw;
+    padding-left: 7vw;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .boba-container {
+    padding-top: 9vw;
+    align-content: center;
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 513px;
+    height: 750px;
+    padding-bottom: 50%;
+  }
+
+  h3 {
+    font-size: 39px;
+    text-align: center;
+    padding-bottom: 4vw;
+  }
+
+  .fieldlabels {
+    font-size: 25px;
+  }
+
+  .heading {
+    font-size: 33px;
+  }
+
+  .infoTitle {
+    font-size: 29px;
+  }
+
+  .mainForm input {
+    height: 70px;
+    font-size: 25px;
+  }
+
+  .mainForm textarea {
+    height: 275px;
+    font-size: 22px;
+  }
+
+  .mainForm input[type="button"],
+  .mainForm input[type="submit"] {
+    height: 55px;
+    width: 112px;
+    font-size: 23px;
+  }
+
+  .selectArea::before,
+  .selectArea::after {
+    --size: 0.6rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+
+  .selectArea::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 30%;
+  }
+
+  .selectArea::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 45%;
+  }
+
+  input[type="file"]::after {
+    top: 12px;
+    left: 26px;
+    font-size: 24px;
+    content: "Upload";
+  }
+
+  .selectArea {
+    position: relative;
+    width: 95%;
+    min-width: 0px;
+  }
+
+  .mainForm select {
+    height: 70px;
+    font-size: 25px;
+    width: 100%;
+    padding: 8px 15px 8px 15px;
+  }
+
+  .mainForm fieldset {
+    padding-top: 2vw;
+    padding-right: 3vw;
+    margin-left: -9px;
+    margin-right: 6px;
+  }
+
+  .card {
+    margin: 0;
+    width: 100%;
+  }
+  
+  #job,
+  #gender {
+    width: 100%;
+  }
+}

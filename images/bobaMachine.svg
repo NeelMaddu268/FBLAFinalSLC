@@ -1,0 +1,101 @@
+<svg width="197" height="236" viewBox="0 0 197 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="56.5" y="7.5" width="23" height="14" rx="4.5" fill="#D61F1F" stroke="black"/>
+<rect width="74" height="236" rx="5" fill="black"/>
+<rect x="12.5" y="88.5" width="47" height="36" rx="6.5" fill="#4B4A4A" stroke="black"/>
+<mask id="path-4-inside-1_22_196" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107 125C103.134 125 100 128.134 100 132V182.721V183C100 195.008 109.62 204.769 121.574 204.996C121.716 204.999 121.858 205 122 205H134C146.15 205 156 195.15 156 183V182.721V132C156 128.134 152.866 125 149 125H107Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107 125C103.134 125 100 128.134 100 132V182.721V183C100 195.008 109.62 204.769 121.574 204.996C121.716 204.999 121.858 205 122 205H134C146.15 205 156 195.15 156 183V182.721V132C156 128.134 152.866 125 149 125H107Z" fill="#DFB28C"/>
+<path d="M121.574 204.996L121.612 202.996L121.612 202.996L121.574 204.996ZM102 182.721V132H98V182.721H102ZM102 183V182.721H98V183H102ZM121.612 202.996C110.746 202.79 102 193.916 102 183H98C98 196.1 108.495 206.748 121.536 206.996L121.612 202.996ZM122 203C121.87 203 121.741 202.999 121.612 202.996L121.536 206.996C121.69 206.998 121.845 207 122 207V203ZM134 203H122V207H134V203ZM154 183C154 194.046 145.046 203 134 203V207C147.255 207 158 196.255 158 183H154ZM154 182.721V183H158V182.721H154ZM154 132V182.721H158V132H154ZM149 123H107V127H149V123ZM158 132C158 127.029 153.971 123 149 123V127C151.761 127 154 129.239 154 132H158ZM102 132C102 129.239 104.239 127 107 127V123C102.029 123 98 127.029 98 132H102Z" fill="black" mask="url(#path-4-inside-1_22_196)"/>
+<mask id="path-6-inside-2_22_196" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107 125C103.134 125 100 128.134 100 132V182.721V183C100 195.008 109.62 204.769 121.574 204.996C121.716 204.999 121.858 205 122 205H134C146.15 205 156 195.15 156 183V182.721V132C156 128.134 152.866 125 149 125H107Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107 125C103.134 125 100 128.134 100 132V182.721V183C100 195.008 109.62 204.769 121.574 204.996C121.716 204.999 121.858 205 122 205H134C146.15 205 156 195.15 156 183V182.721V132C156 128.134 152.866 125 149 125H107Z" fill="#DFB28C"/>
+<path d="M121.574 204.996L121.612 202.996L121.612 202.996L121.574 204.996ZM102 182.721V132H98V182.721H102ZM102 183V182.721H98V183H102ZM121.612 202.996C110.746 202.79 102 193.916 102 183H98C98 196.1 108.495 206.748 121.536 206.996L121.612 202.996ZM122 203C121.87 203 121.741 202.999 121.612 202.996L121.536 206.996C121.69 206.998 121.845 207 122 207V203ZM134 203H122V207H134V203ZM154 183C154 194.046 145.046 203 134 203V207C147.255 207 158 196.255 158 183H154ZM154 182.721V183H158V182.721H154ZM154 132V182.721H158V132H154ZM149 123H107V127H149V123ZM158 132C158 127.029 153.971 123 149 123V127C151.761 127 154 129.239 154 132H158ZM102 132C102 129.239 104.239 127 107 127V123C102.029 123 98 127.029 98 132H102Z" fill="black" mask="url(#path-6-inside-2_22_196)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100 123C100 119.134 103.134 116 107 116H149C152.866 116 156 119.134 156 123V143H100V123Z" fill="#B37541"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100.071 122C100.556 118.608 103.474 116 107 116H149C152.526 116 155.444 118.608 155.929 122H100.071Z" fill="#FAF4EF"/>
+<mask id="path-10-inside-3_22_196" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107 116C103.134 116 100 119.134 100 123V180.215V183C100 195.15 109.85 205 122 205H134C146.15 205 156 195.15 156 183V180.215V123C156 119.134 152.866 116 149 116H107Z"/>
+</mask>
+<path d="M102 180.215V123H98V180.215H102ZM102 183V180.215H98V183H102ZM122 203C110.954 203 102 194.046 102 183H98C98 196.255 108.745 207 122 207V203ZM134 203H122V207H134V203ZM154 183C154 194.046 145.046 203 134 203V207C147.255 207 158 196.255 158 183H154ZM154 180.215V183H158V180.215H154ZM154 123V180.215H158V123H154ZM149 114H107V118H149V114ZM158 123C158 118.029 153.971 114 149 114V118C151.761 118 154 120.239 154 123H158ZM102 123C102 120.239 104.239 118 107 118V114C102.029 114 98 118.029 98 123H102Z" fill="black" mask="url(#path-10-inside-3_22_196)"/>
+<rect x="116.5" y="70.5" width="23" height="17" rx="4.5" fill="#D9D9D9" stroke="black"/>
+<rect x="116.5" y="22.5" width="23" height="12" rx="4.5" fill="white" stroke="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="109.5" cy="187.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="124.5" cy="170.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="106.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="147.5" cy="173.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="140.5" cy="181.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="142.5" cy="192.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="115.5" cy="177.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="130.5" cy="180.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="131.5" cy="189.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="121.5" cy="185.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="116.5" cy="194.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<circle cx="127.5" cy="196.5" r="3.5" fill="black"/>
+<rect x="36" y="29" width="146" height="32" rx="5" fill="black"/>
+<rect x="100" y="57" width="55" height="18" rx="5" fill="black"/>
+<rect y="204" width="197" height="32" rx="5" fill="black"/>
+<rect x="35.5" y="97.5" width="20" height="13" rx="2.5" fill="#868585" stroke="black"/>
+<rect x="16.5" y="99.5" width="14" height="9" fill="#828282" stroke="black"/>
+<rect x="16.5" y="99.5" width="14" height="4" fill="#828282" stroke="black"/>
+</svg>

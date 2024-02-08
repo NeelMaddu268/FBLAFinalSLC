@@ -1,0 +1,562 @@
+:root{
+
+  --cup-size:100px;
+  --juice-Size:calc(calc(var(--cup-size)*0.87) + 3px);
+  --zoom:scale(0.04);
+  --scale-factor: calc(100vw / 4000);
+  --mobile-zoom: scale(--scale-factor);
+
+  --blue:#58c8db; 
+  --brown:#e6aa68;
+  --jade:#fffbbd;
+  --darkBlue:#4F7CAC;
+
+  --black:#37323e;
+  --subfont:#46351D;
+  --font:#000000;
+  --scrollY:0;
+
+}
+*{
+  margin:0;
+}
+html, body { 
+    max-width: 100%;
+
+  font-family: 'Lato';
+}
+body{
+  background:var(--brown);
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#cupText{
+  z-index:1;
+  width:50%;
+  position:absolute;
+  top:8%;
+}
+#arrow{
+  position:absolute;
+  height:8%;
+  right:10%;
+  top:10%;
+  animation: arrowfloat 3s infinite;
+}
+@keyframes arrowfloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -70px, 0);
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+
+  }
+}
+
+
+.cup {
+    width: 340px;
+    border-top: 761px solid var(--darkBlue);
+    border-left: var(--cup-size) solid transparent;
+    border-right: var(--cup-size) solid transparent;
+    position: absolute;
+
+}
+.straw{
+  width:52px;
+  border-top: 850px solid black;
+  position:absolute;
+  transform: skew(14deg);
+  bottom:0;
+  right:40%;
+}
+.container{
+  padding-top:10vh;
+
+  height:1100px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  overflow-x:hidden;
+  background:var(--blue);
+}
+.juice {
+    width: 340px;
+    border-top: 677px solid var(--jade);
+    border-left: var(--juice-Size) solid var(--blue);
+    position: absolute;
+    border-right: var(--juice-Size) solid var(--blue);
+    left: calc(var(--juice-Size) * -1);
+    bottom: 0;
+}
+.boba {
+  height: 4000px;
+  width: 4000px;
+  will-change: transform;
+   transform: scale(0.01);  
+  background-color: var(--brown);
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  bottom:-1800px;
+  left:-1830;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:5;
+}
+.mobboba{
+  height: 160vw;
+  width: 160vw;
+  background-color: var(--brown);
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1;
+  top:-510px;
+}
+
+.bobaNPC{
+  z-index:0;
+  height: 40px;
+  width: 40px;
+  will-change: transform;
+  background-color: var(--brown);
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+
+}
+.cup .bobaNPC:nth-child(4){
+    bottom:100px;
+  left:-10;
+
+}
+.cup .bobaNPC:nth-child(5){
+    bottom:-180px;
+  left:-200;
+
+}
+.cup .bobaNPC:nth-child(6){
+    bottom:-200px;
+  left:-300;
+
+}
+.cup .bobaNPC:nth-child(7){
+    bottom:-300px;
+  left:-400;
+
+}.cup .bobaNPC:nth-child(8){
+    bottom:-200px;
+  left:-500;
+
+}.cup .bobaNPC:nth-child(9){
+    bottom:-100px;
+  left:-300;
+
+}.cup .bobaNPC:nth-child(10){
+    bottom:-400px;
+  left:-200;
+
+}.cup .bobaNPC:nth-child(11){
+    bottom:-180px;
+  left:-300;
+
+}.cup .bobaNPC:nth-child(12){
+    bottom:-300px;
+  left:-350;
+
+}
+
+/*Code to for the boba center text*/
+.bobacenter{
+  width:120vw;/*because the scale will never be greater than 0.8 the text will never have width greater than the screen size */
+}
+
+.bobaTextHeader{
+  font-size: 6rem;
+  opacity:0;
+  transition:1s all;
+  color:var(--black);
+  font-weight:500;
+  margin-top:40rem;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.bobaTextText{
+  font-size:4rem;
+  opacity:0;
+  transition: 2s all;
+  color:var(--subfont);
+}
+.mobile{
+  display:none;
+}
+@media (max-width: 1000px){
+  .bobaTextHeader{
+    font-size:3rem;
+    opacity:1;
+    margin: 0 15%;
+
+  }
+  .bobaTextText{
+    font-size:2rem;
+    opacity:1;
+    margin: 0 15%;
+
+  }
+  .logo{
+    display:block;
+
+  }
+  .bobacenter{
+    margin:8rem 20%;
+    position:absolute;
+    top:5%;
+  }
+  .container{
+    height:775px;
+    display:none;
+
+  }
+  .mobile{
+    display:flex;
+
+  }
+}
+/*resize font*/
+@media (max-width:600px){
+  .bobaTextHeader{
+    font-size:2.5rem;
+  }
+  .bobaTextText{
+    font-size:1.5rem;
+  }
+}
+@keyframes bobaFloat {
+  0% {
+    transform: translate3d(0, 0, 0) var(--zoom);
+  }
+  100% {
+    transform: translate3d(0, -50px, 0) var(--zoom);
+  }
+}
+
+.iceContainer {
+  margin: 0;
+  background-color: var(--brown);
+  position:relative;
+  z-index:5;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  display:flex;
+  justify-content:center;
+  height:200vh;
+  flex-direction:column;
+}
+
+.iceText{
+  position:relative;
+  z-index:3;
+  width:80%;
+  margin-left:10%;
+  max-height:100%;
+  justify-content:center;
+  display:flex;
+}
+
+.text{
+  width:70%;  
+  height:auto;
+  max-height:100%;
+}
+
+/*Assign positions to each ice cube*/
+.iceContainer .float:nth-child(1){
+    animation: iceFloat 5s ease-in-out infinite alternate;
+    top: 25px;
+    left:150px;
+}
+
+.iceContainer .float:nth-child(2){
+    animation: iceFloat 3s ease-in-out infinite alternate;
+    right:200px;
+    top:140px;
+}
+
+.iceContainer .float:nth-child(3){
+    animation: iceFloat 4s ease-in-out infinite alternate;
+    right:280px;
+    top:600px;
+}
+.iceContainer .float:nth-child(4){
+    animation: iceFloat 2s ease-in-out infinite alternate;
+    left:250px;
+    top:400px;
+
+}
+.iceContainer .float:nth-child(5){
+    animation: iceFloat 3s ease-in-out infinite alternate;
+    left:50vw;
+    top:120px;
+}
+#ice{
+  fill:#9becfa;
+  stroke:var(--darkBlue;)
+}
+.float{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+
+}
+/*causes a floating effect on the ice*/
+@keyframes iceFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -50px, 0);
+  }
+}
+
+/*Animate the buble in the ice section*/
+@keyframes bubbleRise {
+    0% {
+        margin-top: 700px;
+    }
+
+    100% {
+      margin-top:-1500;
+    }
+}
+
+@keyframes bubbleSway { 
+    0% { 
+        margin-left: 0px;
+    }
+    100% { 
+        margin-left: 50px;
+    }
+}
+
+.bubble {
+  animation: bubbleRise 15s linear infinite, bubbleSway 2s ease-in-out infinite alternate;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  left:500px;
+  border-radius: 100px;
+  background: snow;
+  border-color:#ffd1d1;
+}
+
+.left{
+  margin-right:5%;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.right{
+  margin-left:5%;
+}
+
+.goFish{
+
+  background:var(--blue);
+}
+.benefits{
+  display:flex;
+  justify-content:center;
+  width:85%;
+  margin-left:7.5%;
+padding-top:2rem;
+  padding-bottom:2rem;
+  border-radius: 2rem;
+  z-index:2;
+
+}
+.benefits .card:nth-child(1){
+  margin-top:0;
+  margin-bottom:8rem;
+}
+.benefits .card:nth-child(2){
+  margin-top:4rem;
+  margin-bottom:4rem;
+
+}
+.benefits .card:nth-child(3){
+  margin-top:8rem;
+  margin-bottom:0re,
+}
+
+.benefits h1{
+  font-size:37px;
+}
+@media (max-width:1100px){
+  .benefits h1{
+    font-size:30px;
+  }
+}
+
+.card{
+
+  background:var(--jade);
+  margin:0 1rem;
+  border-radius:3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.imageContainer{
+  display:flex;
+  align-items:center;
+  pointer-events: none;
+}
+.image{
+  width:100%;
+  max-height:100%;
+}
+
+.Benefits-Text{
+  background:var(--blue);
+  width:100%;
+  display:flex;
+  padding:2rem 0;
+  justify-content:center;
+  align-items:center;
+  border-radius:1rem;
+  font-size:1.1rem;
+  text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+  height:2em;
+
+}
+@media (max-width: 1000px){
+  .text{
+    width:100%;
+  }
+  .benefits .card:nth-child(1){
+    margin-top:0;
+    margin-bottom:1rem;
+  }
+  .benefits .card:nth-child(2){
+    margin-top:0;
+    margin-bottom:1rem;
+  }
+  .benefits .card:nth-child(3){
+    margin-top:0;
+    margin-bottom:1rem;
+  }
+  .iceContainer{
+    font-size:2000px;
+    height:auto;
+    padding-top:10rem;
+
+  }
+  .benefits{
+    flex-direction:column;
+    align-items:center;
+
+  }
+  .iceText{
+    width:100%;
+    margin-left:0;
+  }
+.benefits .card{
+  width:80%;
+  font-size:5rem;
+  height:auto;
+
+}
+  .Benefits-Text{
+    font-size:1.5rem;
+    text-align:center;
+    padding:2rem 0;
+  }
+}
+
+#CTA{
+  width:80%;
+  margin-left:10%;
+  height:auto;
+}
+.CTAcontainer{
+  background:var(--darkBlue);
+  padding-top:1rem;
+}
+#leftText, #rightText{
+  transition: all 0.5s;
+}
+/*Change the color of the call to action buttons on hover*/
+#Left:hover #leftText{
+  fill:#6A5ACD;
+    transform:translateY(-100px);
+  box-shadow:10px 10px purple;
+}
+#Right:hover #rightText{
+  fill:#20B2AA;
+  transform:translateY(-100px);
+  box-shadow:10px 10px purple;
+}
+
+#leftText, #leftTable,#rightText, #rightTable, #shado, #shadow{
+  cursor:pointer;
+}
+
+
+@media (max-width: 1000px){
+  .ice-cube svg{
+    width:161%;
+  }
+  /*Change ice cubes to be better organized on phone and tablet layouts*/
+  .iceContainer .float:nth-child(1){
+      animation: iceFloat 5s ease-in-out infinite alternate;
+      top: -3%;
+      left:0%;
+  }
+
+  .iceContainer .float:nth-child(2){
+      animation: iceFloat 3s ease-in-out infinite alternate;
+      top:2%;
+      left:36%;
+  }
+
+  .iceContainer .float:nth-child(3){
+      animation: iceFloat 4s ease-in-out infinite alternate;
+      top:10%;
+      left:60%;
+  }
+  .iceContainer .float:nth-child(4){
+      animation: iceFloat 2s ease-in-out infinite alternate;
+      left:65%;
+
+  }
+  .iceContainer .float:nth-child(5){
+      animation: iceFloat 3s ease-in-out infinite alternate;
+      top:7%;
+      left:10%;
+  }
+}
+@media (max-width:1000px){
+  #CTA{
+    display:none;
+  }
+
+  #right, #left{
+    height:auto;
+    width:100%;
+    margin-top:2rem;
+  }
+}
